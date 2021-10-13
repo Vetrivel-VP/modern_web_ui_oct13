@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(#3B124F, #1F0120);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.backgroundSvg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+header{
+    position: fixed;
+    top: 0;left: 0;
+    z-index: 101;
+    padding: 25px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .logo{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+header .menu{
+    display: flex;
+}
+
+header .menu li{
+    list-style: none;
+    margin: 0 40px;
+}
+
+header .menu li a{
+    text-decoration: none;
+    color: #d1cdcd;
+    transition: all 0.3s ease-in-out;
+}
+
+header .menu li:last-child a{
+    border: 1px solid #d1cdcd;
+    padding: 5px 35px;
+    border-radius: 20px;
+}
+
+header .menu li a:hover{
+    color: #fff;
+}
+
+header .menu li:last-child a:hover{
+    border: 1px solid #fff;
+}
+
+.topSection, .lowerSection{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 40px;
+    width: 100%;
+    position: relative;
+}
+
+.topSection .heading{
+    font-size: 2.4rem;
+    color: #f1f1f1;
+}
+
+.topSection .rightSection{
+    display: flex;
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+    height: 50%;
+}
+
+.topSection .rightSection p{
+    color: #f1f1f1;
+}
+
+.topSection .rightSection .dots{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.topSection .rightSection .dots .dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #d1cdcd;
+}
+
+.lowerSection .rectangle{
+    width: 30px;
+    height: 15px;
+    border-radius: 5px ;
+    background: #d1cdcd;
+}
+
+.lowerSection p{
+    width: 330px;
+    color: #d1cdcd;
+    text-align: justify;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .left, .right{
+    display: flex;
+}
+
+footer .left > div , footer .right > div{
+    margin: 0 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1px solid #d1cdcd;
+    text-align: center;
+    line-height: 30px;
+}
+
+footer .left > div i , footer .right > div i{
+    color: #d1cdcd;
+}
